@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>Add</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input [(ngModel)]="reviewObject.name" labelPlacement="stacked" label="Enter Movie Name:" placeholder="Godzilla"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Description:</ion-label>
+    <ion-textarea placeholder="Action movie starring John Smith" [(ngModel)]="reviewObject.description" rows="2"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="reviewObject.category" labelPlacement="stacked" label="Enter Movie Category:" placeholder="Horror"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label  position="stacked">Enter Movie Review:</ion-label>
+    <ion-textarea placeholder="Highly reccomend but terrible plot" [(ngModel)]="reviewObject.review" rows="5"></ion-textarea>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input [(ngModel)]="reviewObject.rating" labelPlacement="stacked" label="Rating out of 10:" placeholder="8.5"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Favourite?</ion-label>
+    <ion-checkbox [(ngModel)]="reviewObject.isFavourite"></ion-checkbox>
+  </ion-item>
+</ion-content>

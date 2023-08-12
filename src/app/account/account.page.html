@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="fix-title">Welcome, {{userName}}</div>
+    <ion-buttons slot="end">
+      <ion-button (click)="goStats()">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons> 
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<ion-item>
+  <ion-avatar slot="start">
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+  </ion-avatar>
+  <ion-label>
+    Avatar
+  </ion-label>
+</ion-item>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="movies" placeholder="Favourite Movie">
+      <ion-select-option value="Movie1">Movie1</ion-select-option>
+      <ion-select-option value="Movie2">Movie2</ion-select-option>
+      <ion-select-option value="Movie3">Movie3</ion-select-option>
+    </ion-select>
+  </ion-item>
+  &nbsp;
+  &nbsp;
+</ion-list>
+
+</ion-content>

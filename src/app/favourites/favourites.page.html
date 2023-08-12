@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Favourites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let favourites of favesArray; index as i">
+   
+      <ion-item>
+        
+        <ion-icon style="margin-right:10px"name="star"></ion-icon>
+        <ion-label>{{favourites}}</ion-label>
+      </ion-item>
+     
+  </ion-list>
+</ion-content>

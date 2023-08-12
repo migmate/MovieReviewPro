@@ -1,0 +1,7 @@
+{
+  "name": "MoviePro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

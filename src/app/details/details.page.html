@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Movie Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{reviewObject.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Category:</ion-label>
+        <ion-text>{{reviewObject.category}}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Description:</ion-label>
+        <ion-text>{{reviewObject.description}}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Review:</ion-label>
+        <ion-text>{{reviewObject.review}}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Rating:</ion-label>
+        <ion-text>{{reviewObject.rating}} / 10</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Is Favourite:</ion-label>
+        <ion-text>{{reviewObject.isFavourite}}</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

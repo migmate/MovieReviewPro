@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (submit)="onLogin()">
+    <ion-item>
+      <ion-label>Username:</ion-label>
+    <ion-input type="text"[(ngModel)]="userName" name="userName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password:</ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-checkbox style="margin-right:10px" slot="start"></ion-checkbox>
+     <ion-label class="text-align: start">
+         Remain Logged In?
+  </ion-label>
+    </ion-item>
+    <ion-button expand="full" type="submit">Login</ion-button>
+  </form>
+</ion-content>
